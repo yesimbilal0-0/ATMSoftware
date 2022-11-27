@@ -20,12 +20,12 @@ public class Account {
 		setBalance(balance);
 	}
 	
-	public void Deposit(double amount) {
+	public void deposit(double amount) {
 			System.out.println("Deposit Successful");
 			this.balance += amount;
 	}
 	
-	public void Withdraw(double amount) {
+	public void withdraw(double amount) {
 		if(this.getBalance() < amount) {
 			System.out.println("Insufficient Balance");
 		} else {
