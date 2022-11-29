@@ -1,6 +1,6 @@
 package ATM;
 
-public class Account {
+public abstract class Account {
 	private int number;
 	private double balance;
 	
@@ -20,10 +20,7 @@ public class Account {
 		setBalance(balance);
 	}
 	
-	public void deposit(double amount) {
-			System.out.println("Deposit Successful");
-			this.balance += amount;
-	}
+	abstract public void deposit(double amount);
 	
 	public void withdraw(double amount) {
 		if(this.getBalance() < amount) {
