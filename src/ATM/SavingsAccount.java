@@ -9,6 +9,7 @@ public class SavingsAccount extends Account{
 		super(number, balance);
 	}
 	
+	@Override
 	public void deposit(double amount) {
 			System.out.println("Deposit Successful");
 			super.setBalance(super.getBalance() + amount);
